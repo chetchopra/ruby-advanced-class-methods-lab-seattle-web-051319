@@ -43,5 +43,9 @@ class Song
     find_by_name(name) ? find_by_name(name) : create_by_name(name)
   end
   
+  def self.alphabetical
+    return @@all.sort
+  end
+  
 
 end
