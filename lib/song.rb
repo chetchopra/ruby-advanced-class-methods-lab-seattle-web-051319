@@ -42,7 +42,6 @@ class Song
   def self.find_or_create_by_name(name)
     if !find_by_name(name)
       create_by_name(name)
-      return nil
     else 
       return find_by_name(name)
     end
