@@ -24,10 +24,7 @@ class Song
   end
   
   def self.create_by_name(name)
-    song = Song.new
-    song.name = name
-    @@all << song
-    return song
+    self.new_by_name(name)
   end
   
   def self.find_by_name(name)
@@ -57,6 +54,10 @@ class Song
     song.artist_name = split_filename[0].strip
     @@all << song
     return song
+  end
+  
+  def create_from_filename(filename)
+    self.new_from_filename(filename)
   end
 end
 
