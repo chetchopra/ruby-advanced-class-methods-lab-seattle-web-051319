@@ -58,4 +58,3 @@ class Song
   end
 end
 
-Song.new_from_filename("Thundercat - For Love I Come.mp3")
