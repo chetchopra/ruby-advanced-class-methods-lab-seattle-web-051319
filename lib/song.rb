@@ -53,7 +53,7 @@ class Song
   def self.new_from_filename(filename)
     split_filename = filename.split(/\.|\-/)
     song = Song.new
-    puts split_filename[0]
+    puts split_filename[0].instance_of
     # song.artist_name = split_filename[1]
   end
 end
