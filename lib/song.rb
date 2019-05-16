@@ -54,7 +54,7 @@ class Song
     split_filename = filename.split(/\.|\-/)
     song = Song.new
     puts split_filename[0]
-    puts split_filename[1].trim
+    puts split_filename[1].trim()
     # song.artist_name = split_filename[1]
   end
 end
