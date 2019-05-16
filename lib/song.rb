@@ -55,6 +55,7 @@ class Song
     song = Song.new
     song.name = split_filename[1].strip
     song.artist_name = split_filename[0].strip
+    @all << song
     return song
   end
 end
