@@ -59,6 +59,10 @@ class Song
   def self.create_from_filename(filename)
     self.new_from_filename(filename)
   end
+  
+  def self.destroy_all
+    @@all.clear
+  end
 end
 
 # Song.new_from_filename("Thundercat - For Love I Come.mp3")
