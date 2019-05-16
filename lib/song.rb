@@ -53,8 +53,7 @@ class Song
   #"Thundercat - For Love I Come.mp3"
   def self.new_from_filename(filename)
     puts filename.split("-")
-    
-    
-  
-
+  end
 end
+
+Song.new_from_filename("Thundercat - For Love I Come.mp3")
