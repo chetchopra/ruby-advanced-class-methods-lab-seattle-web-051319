@@ -52,6 +52,7 @@ class Song
   
   #"Thundercat - For Love I Come.mp3"
   def self.new_from_filename(filename)
+    
     puts filename.delete(' ').split(/\.|\-/)[0]
   end
 end
