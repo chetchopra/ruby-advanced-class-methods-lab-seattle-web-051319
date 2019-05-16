@@ -50,10 +50,11 @@ class Song
     }
   end
   
-  #"Thundercat - For Love I Come.mp3"
   def self.new_from_filename(filename)
-    
-    puts filename.delete(' ').split(/\.|\-/)[0]
+    split_filename = filename.split(/\.|\-/)
+    song = Song.new
+    song.name = split_filename[0]
+    song.artist_name = split_filename[1]
   end
 end
 
